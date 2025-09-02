@@ -1,7 +1,44 @@
-## Robot Package Template
+# Autoport
+## Overview
+This ROS2 package contains the core robot description, configurations, launch files, and Gazebo simulation environments for a differential drive robot system. It provides everything needed to simulate, control, and visualize the robot in a modular manner.
 
-This is a GitHub template. You can make your own copy by clicking the green "Use this template" button.
+# File Structure
+```
+.
+├── CMakeLists.txt
+├── config
+│   ├── gazebo_params.yaml
+│   ├── mapper_params_online_async.yaml
+│   └── my_controllers.yaml
+├── description
+│   ├── gazebo_control.xacro
+│   ├── inertial_macros.xacro
+│   ├── lidar.xacro
+│   ├── robot_core.xacro
+│   ├── robot.urdf.xacro
+│   └── ros2_control.xacro
+├── launch
+│   ├── launch_robot.launch.py
+│   ├── launch_sim.launch.py
+│   └── rsp.launch.py
+├── package.xml
+```
+## Features
 
-It is recommended that you keep the repo/package name the same, but if you do change it, ensure you do a "Find all" using your IDE (or the built-in GitHub IDE by hitting the `.` key) and rename all instances of `my_bot` to whatever your project's name is.
+- Robot description using URDF and xacro macros.
+- Configurable control parameters and Gazebo simulation settings.
+- Launch files for running the robot and simulation with ROS2.
+- Sample empty Gazebo world for testing.
 
-Note that each directory currently has at least one file in it to ensure that git tracks the files (and, consequently, that a fresh clone has direcctories present for CMake to find). These example files can be removed if required (and the directories can be removed if `CMakeLists.txt` is adjusted accordingly).
+## Usage
+
+Launch the real robot:
+```
+ros2 launch autoport_bot launch_robot.launch.py
+```
+
+Launch the simulation:
+```
+ros2 launch autoport_bot launch_sim.launch.py
+```
+

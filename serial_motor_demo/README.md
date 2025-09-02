@@ -23,7 +23,7 @@ The driver has a few parameters:
 
 To run, e.g.
 ```
-ros2 run serial_motor_demo driver --ros-args -p encoder_cpr:=3440 -p loop_rate:=30 -p serial_port:=/dev/ttyUSB0 -p baud_rate:=57600
+ros2 run serial_motor_demo driver --ros-args -p encoder_cpr:=1325 -p loop_rate:=30 -p serial_port:=/dev/ttyUSB0 -p baud_rate:=57600
 ```
 
 It makes use of the following topics
@@ -37,13 +37,12 @@ It makes use of the following topics
 
 Has two modes, one for raw PWM input (-255 to 255) and one for closed-loop control. In this mode you must first set the limits for the sliders.
 
+## Attribution
 
-## TODO
+This library was originally developed and maintained by [Josh Newans](https://github.com/joshnewans)
+. Full source code and documentation are available in the [original repository](https://github.com/joshnewans/serial_motor_demo.git)
+.
 
-- Add service for encoder reset
-- Add service for updating PID parameters
-- Stability improvements
-- More parameterisation
 
 
 

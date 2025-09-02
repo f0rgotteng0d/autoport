@@ -1,23 +1,24 @@
 # diffdrive_arduino
+## Overview
+diffdrive_arduino is a ROS2 hardware interface node designed to work with an Arduino running the ros_arduino_bridge firmware. It provides a bridge between the Arduino motor controller and the ROS2 control ecosystem by implementing a ros2_control hardware interface compatible with the diff_drive_controller.
 
-This node is designed to provide a ros2_control hardware interface for an Arduino running firmware from `ros_arduino_bridge`.
-It is designed to be used with a `diff_drive_controller` from `ros2_control`.
-It is expected to communicate via serial and to have two motors, each with velocity control and position/velocity feedback.
+This package enables velocity control and position/velocity feedback for a differential drive robot with two independently controlled motors.
+
+## Features
+- Supports two motor velocity controls.
+- Provides encoder position and velocity feedback.
+- Communicates with Arduino over serial (configurable port and baud rate).
+- Designed to be used with the ROS2 diff_drive_controller from ros2_control.
+- Real-time and reliable hardware interface for differential drive robots.
+
+## Requirements
+- Arduino device running [ros_arduino_bridge](https://github.com/joshnewans/ros_arduino_bridge.git) firmware.
+- ROS2 (compatible with ros2_control framework).
+- Serial connection to Arduino.
+
+## Attribution
+
+This library was originally developed and maintained by [Josh Newans](https://github.com/joshnewans)
+. Full source code and documentation are available in the [original repository](https://github.com/joshnewans/diffdrive_arduino?tab=readme-ov-file)
 
 
-
-
-It is based on the diffbot example from [ros2_control demos](https://github.com/ros-controls/ros2_control_demos/tree/master/example_2).
-
-For a tutorial on how to develop a hardware interface like this, check out the video below:
-
-https://youtu.be/J02jEKawE5U
-
-
-
-## To Do
-
-- [ ] Document changes from earlier versions
-- [ ] Document usage and parameters
-- [ ] Clean up remaining connections to original demo code
-- [ ] Add license etc (in the meantime, do whatever you want with it)
