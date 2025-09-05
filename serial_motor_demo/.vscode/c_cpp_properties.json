@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/kg/autoport/install/serial_motor_demo_msgs/include/**",
+        "/home/kg/autoport/install/serial/include/**",
+        "/home/kg/autoport/install/diffdrive_arduino/include/**",
+        "/home/kg/ros2_ws/install/custom_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/kg/autoport/src/ld08_driver/include/**",
+        "/home/kg/autoport/src/serial/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

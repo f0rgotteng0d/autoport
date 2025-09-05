@@ -1,0 +1,22 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/kg/autoport/install/serial_motor_demo/lib/python3.10/site-packages",
+        "/home/kg/autoport/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages",
+        "/home/kg/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/kg/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages",
+        "/home/kg/ros2_ws/build/calculator_sra_task",
+        "/home/kg/ros2_ws/install/calculator_sra_task/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/kg/autoport/install/serial_motor_demo/lib/python3.10/site-packages",
+        "/home/kg/autoport/install/serial_motor_demo_msgs/local/lib/python3.10/dist-packages",
+        "/home/kg/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages",
+        "/home/kg/ros2_ws/install/custom_interfaces/local/lib/python3.10/dist-packages",
+        "/home/kg/ros2_ws/build/calculator_sra_task",
+        "/home/kg/ros2_ws/install/calculator_sra_task/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}
