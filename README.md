@@ -1,7 +1,7 @@
 # Autoport -  A SLAM Bot
 SLAM-enabled autonomous robot that builds real-time maps and localizes itself for navigation in unknown environments.
 
-# Table of Contents
+## Table of Contents
 - [About the Project](#about-the-project)
   - [Tech Stack](#tech-stack)
 - [Getting Started](#getting-started)
@@ -13,19 +13,19 @@ SLAM-enabled autonomous robot that builds real-time maps and localizes itself fo
 - [Contributors](#contributors)
 - [Acknowledgements and Resources](#acknowledgements-and-resources)
 
-# About the Project 
+## About the Project 
 Autoport is a ROS 2-powered mobile robot designed for autonomous exploration, mapping, and navigation using Simultaneous Localization and Mapping (SLAM).
 Built on affordable hardware like the Raspberry Pi and common sensors, Autoport serves as a platform for robotics research, education, and prototyping.
 
-## Tech Stack
+### Tech Stack
 - [ROS2](https://docs.ros.org/en/rolling/index.html)
 - [SLAM](https://www.mathworks.com/discovery/slam.html)
 - [Raspberry Pi 4/5](https://www.raspberrypi.com/) or similar
 - Arduino compatible hardware e.g. [Arduino Nano](https://docs.arduino.cc/hardware/nano/) or [ESP32](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf)
 
 
-# Getting Started
-## Prerequisites
+## Getting Started
+### Prerequisites
 - Hardware
   - Raspberry Pi 4/5 (recommended) or Jetson Nano
   - LIDAR (e.g., RPLidar A1/A2, LDS08 Lidar, Hokuyo)
@@ -74,12 +74,12 @@ Built on affordable hardware like the Raspberry Pi and common sensors, Autoport 
 
     
     ```
-## Installation
+### Installation
   ```
   git clone https://github.com/f0rgotteng0d/autoport.git
   ```
 
-# Usage
+## Usage
 
 In different terminals, run the following commands -
 ```
@@ -90,13 +90,24 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/di
 
 ```
 
-# Future Work
+## Results and Demos
+
+Using real-time 2D SLAM and laser scanner data, an accurate occupancy grid map of an indoor environment was generated. The map below demonstrates the quality and detail achievable in typical room settings.
+### SLAM Map Example
+<img width="1920" height="1080" alt="Screenshot from 2025-09-06 16-27-46" src="https://github.com/user-attachments/assets/64fa68c9-5182-412e-817d-4c6a322533ec" /><br><br>
+
+Watch this simulation showcasing the Nav2 navigation stack in action for autonomous robot path planning and obstacle avoidance.<br>
+[Watch the video](https://youtu.be/KvBy6v8WLM0)
+
+
+
+## Future Work
 - [ ] Add support for a camera onboard to increase accuracy
 - [ ] Expand environment types to adapt to outdoors or tricky terrain
 - [ ] Improve power efficiency
 - [ ] Make another custom bot and enable collaborative SLAM
 
-# Troubleshooting
+## Troubleshooting
 
 - **Cannot connect to serial port**
   - Ensure the serial device path is correct (`/dev/ttyUSB0` or equivalent).
@@ -122,12 +133,12 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/di
   - Increase serial timeout settings in parameters.
   - Close other applications that might be using the serial port.
 
-# Contributors
+## Contributors
 - [Kushaan Gada](https://github.com/f0rgotteng0d)
 - [Hrishi Pandey](https://github.com/Hrishi010905)
 - [Rayon Biswas](https://github.com/RayonBiswas)
 
-# Acknowledgements and Resources 
+## Acknowledgements and Resources 
 - [SRA VJTI](https://sravjti.in/) Eklavya 2025
 - Github Repositories we refered to [JoshNewans](https://github.com/joshnewans/articubot_one)
 - [Articulated Robotics](https://articulatedrobotics.xyz/)
