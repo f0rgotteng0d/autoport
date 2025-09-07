@@ -84,7 +84,7 @@ Built on affordable hardware like the Raspberry Pi and common sensors, Autoport 
 In different terminals, run the following commands -
 ```
 ros2 launch autoport_bot launch_robot.launch.py
-ros2 launch ld08_driver ld08.launch.py
+ros2 launch rplidar_ros rplidar_a2m8_launch.py
 ros2 launch slam_toolbox online_async_launch.py params_file:=./src/autoport_bot/config/mapper_params_online_async.yaml use_sim_time:=false
 ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/diff_cont/cmd_vel_unstamped
 
