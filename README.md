@@ -99,6 +99,9 @@ Using real-time 2D SLAM and laser scanner data, an accurate occupancy grid map o
 Watch this simulation showcasing the Nav2 navigation stack in action for autonomous robot path planning and obstacle avoidance.<br>
 [Watch the video](https://youtu.be/KvBy6v8WLM0)
 
+## Project Report
+Read the full project report [here](AutoPort_ProjectReport.pdf).
+
 
 
 ## Future Work
