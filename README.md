@@ -4,14 +4,20 @@ SLAM-enabled autonomous robot that builds real-time maps and localizes itself fo
 ## Table of Contents
 - [About the Project](#about-the-project)
   - [Tech Stack](#tech-stack)
+  - [Hardware Used](#hardware-used)
+  - [Repository Structure](#repository-structure)
+  - [System Architecture](#system-architecture)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#Prerequisites)
-  - [Installation](#Installation)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
 - [Usage](#usage)
+- [Results and Demos](#results-and-demos)
+- [Project Report](#project-report)
 - [Future Work](#future-work)
 - [Troubleshooting](#troubleshooting)
 - [Contributors](#contributors)
 - [Acknowledgements and Resources](#acknowledgements-and-resources)
+- [License](#license)
 
 ## About the Project 
 Autoport is a ROS 2-powered mobile robot designed for autonomous exploration, mapping, and navigation using Simultaneous Localization and Mapping (SLAM).
